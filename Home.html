@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volley Boast LLC - Home</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/_parallax.css" />-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src='js/device.min.js'></script>
+    <link rel="stylesheet" href="css/camera.css" />
+    <style>
+        /*body {
+            counter-reset: section;
+        }
+
+        .jssorb052 .i:after {
+            counter-increment: section;
+            content: counter(section);
+            top: 12px;
+            position: relative;
+            color: red;
+        }*/
+
+        p span.big {
+            display: inline-block;
+            margin-top: -1px;
+        }
+    </style>
+    <!--<script>
+        var myVar;
+        function myFunction() {
+            $("#mainPage").css('opacity', '0');
+             myVar = setTimeout(showPage, 2000);
+
+            //$("#loaderDiv").remove();
+        }
+
+        function showPage() {
+            clearTimeout(myVar);
+            $("#mainPage").addClass('showme');
+            $("#loaderDiv").remove();
+        }
+    </script>-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{ b: 0, d: 600, y: -290, e: { y: 27 } }],
+              [{ b: 0, d: 1000, y: 185 }, { b: 1000, d: 500, o: -1 }, { b: 1500, d: 500, o: 1 }, { b: 2000, d: 1500, r: 360 }, { b: 3500, d: 1000, rX: 30 }, { b: 4500, d: 500, rX: -30 }, { b: 5000, d: 1000, rY: 30 }, { b: 6000, d: 500, rY: -30 }, { b: 6500, d: 500, sX: 1 }, { b: 7000, d: 500, sX: -1 }, { b: 7500, d: 500, sY: 1 }, { b: 8000, d: 500, sY: -1 }, { b: 8500, d: 500, kX: 30 }, { b: 9000, d: 500, kX: -30 }, { b: 9500, d: 500, kY: 30 }, { b: 10000, d: 500, kY: -30 }, { b: 10500, d: 500, c: { x: 125.00, t: -125.00 } }, { b: 11000, d: 500, c: { x: -125.00, t: 125.00 } }],
+              [{ b: 0, d: 600, x: 535, e: { x: 27 } }],
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 600, o: 1, e: { o: 5 } }],
+              [{ b: -1, d: 1, c: { x: 250.0, t: -250.0 } }, { b: 0, d: 800, c: { x: -250.0, t: 250.0 }, e: { c: { x: 7, t: 7 } } }],
+              [{ b: -1, d: 1, o: -1 }, { b: 0, d: 600, x: -570, o: 1, e: { x: 6 } }],
+              [{ b: -1, d: 1, o: -1, r: -180 }, { b: 0, d: 800, o: 1, r: 180, e: { r: 7 } }],
+              [{ b: 0, d: 1000, y: 80, e: { y: 24 } }, { b: 1000, d: 1100, x: 570, y: 170, o: -1, r: 30, sX: 9, sY: 9, e: { x: 2, y: 6, r: 1, sX: 5, sY: 5 } }],
+              [{ b: 2000, d: 600, rY: 30 }],
+              [{ b: 0, d: 500, x: -105 }, { b: 500, d: 500, x: 230 }, { b: 1000, d: 500, y: -120 }, { b: 1500, d: 500, x: -70, y: 120 }, { b: 2600, d: 500, y: -80 }, { b: 3100, d: 900, y: 160, e: { y: 24 } }],
+              [{ b: 0, d: 1000, o: -0.4, rX: 2, rY: 1 }, { b: 1000, d: 1000, rY: 1 }, { b: 2000, d: 1000, rX: -1 }, { b: 3000, d: 1000, rY: -1 }, { b: 4000, d: 1000, o: 0.4, rX: -1, rY: -1 }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $Idle: 9000,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions,
+                    $Breaks: [
+                      [{ d: 2000, b: 1000 }]
+                    ]
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1170;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                //console.log(containerElement);
+                //console.log(containerWidth);
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+</head>
+<body>
+    <!-- onload="myFunction()"<div id="loaderDiv">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>-->
+
+    <div id="mainPage">
+        <div class="page">
+            <form id="form1">
+                <header>
+                    <div class="top-row">
+                        <div class="container">
+                            <div class="brand">
+                                <a href="./">
+                                    <img alt="VolleyBoast" src="images/logo.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="stuck_container" class="stuck_container">
+                        <div class="container">
+                            <nav class="nav">
+                                <ul class="sf-menu" data-type="navbar">
+                                    <li class="active">
+                                        <a href="Home.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="VBMS.html">VBMS Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="Applications.html">Applications</a>
+                                    </li>
+                                    <li>
+                                        <a href="Benefits.html">Operational Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="AboutUs.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="Contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <section class="center">
+                        <!--<iframe src="slider/with-jquery.html" style="height:420px;width:1170px;"></iframe>-->
+                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1170px;height:420px;overflow:hidden;visibility:hidden;border:1px solid #f2f2f2;">
+                            <!-- Loading Screen -->
+                            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg" />
+                            </div>
+                            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1170px;height:420px;overflow:hidden;">
+                                <!--<div>
+                                    <img data-u="image" src="images/000.jpg" />
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/000-1.jpg" />
+                                </div>-->
+                                <div>
+                                    <img data-u="image" src="images/000-2.jpg" />
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/001.jpg" />
+                                    <div data-u="caption" data-t="4" style="top: 30px;left: 30px;" class="sliderCaption text1">Remote Monitoring</div>
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/002.jpg" />
+                                    <div data-ts="flat" data-p="1360" style="position:absolute;top:0px;left:0px;width:1170px;height:420px;overflow:hidden;">
+                                        <div data-u="caption" data-t="4" class="sliderCaption text2" style="top:45px;left:35px;">Monitor Your Operations And Equipment<br />From Wherever You Are.</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/003.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text3" style="position:absolute;top:30px;left:30px;">Manage Your​ ​Operations​ Proactively<br />And​ Access Data​ Securely</div>
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/004.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text2" style="position:absolute;top:30px;right:30px;">Informed Decision Making</div>
+                                </div>
+                                <div>
+                                    <img data-u="image" src="images/005.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text1" style="position:absolute;bottom:30px;left:30px;">Improve Operational<br />Efficiency</div>
+                                </div>
+                                <!--<div>
+                                    <img data-u="image" src="images/005-1.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text1" style="position:absolute;bottom:30px;left:30px;">Improve Operational<br />Efficiency</div>
+                                </div>-->
+                                <div>
+                                    <img data-u="image" src="images/006.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text2" style="position:absolute;top:30px;left:30px;">Mitigate Risks</div>
+                                </div>
+                                <div data-b="0">
+                                    <img data-u="image" src="images/007.jpg" />
+                                    <div data-u="caption" data-t="4" class="sliderCaption text3" style="position:absolute;top:30px;right:30px;">Improve Cash Flow</div>
+                                </div>
+                            </div>
+                            <!-- Bullet Navigator -->
+                            <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Arrow Navigator -->
+                            <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                                </svg>
+                            </div>
+                            <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </section>
+                    <!--<div class="camera_container">
+                        <div id="camera" class="camera_wrap">
+                            <div data-src="images/oil-refine.jpg"></div>
+                            <div data-src="images/gas.jpg"></div>
+                            <div data-src="images/node1.png"></div>
+                            <div data-src="images/oilandgas.jpg"></div>
+                            <div data-src="images/onset-sensors.jpg"></div>
+                            <div data-src="images/water.jpg"></div>
+                            <div data-src="images/Charts.png"></div>
+                        </div>
+                    </div>-->
+                    <!--<section class="well14 bg1">
+                        <div class="container">
+                            <h4 class="coltext1 center">Remote Industrial Sensing and Analytics</h4>
+                            <p class="marginTop20px ">
+                                Volley Boast provides customers with the data and analytics necessary to both increase revenues and improve operational efficiency. Modern technology offers the opportunity to monitor production, equipment, facilities, and operations that were previously too expensive and difficult to track remotely. Properly deployed, such technology helps customers know where their team's attention is most needed and how their manpower can be put to optimal use.
+                            </p>
+                            <br />
+                            <br />
+                            <p>
+                                Volley Boast customizes a combination of proven industrial sensors, intermittent readings, low-power/long-range transmitters, and "cloud" computing to offer customers a platform with:
+                            </p>
+                            <br />
+                            <ul class="ulList">
+                                <li>Accurate, reliable, and timely measurements</li>
+                                <li>Data analysis to provide actionable information</li>
+                                <li>Extremely long-lived batteries</li>
+                                <li>Minimal physical footprint reducing or completely eliminating cabling</li>
+                                <li>Delivery of information to any employee with internet access</li>
+                                <li>Volley Boast can do all of this in locations which lack utilities or cell coverage and can do it in both hazardous and non-hazardous areas.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-url="" data-mobile="true">
+                        <div class="row">
+                            <div class="bg5 opaque textItalic">
+                                <div class="grid_5 wow fadeInRight">
+                                    <p class="marginTop20px center">
+                                        "Quite often, the reason a problem is complex and therefore expensive to solve is that the information you need is not accessible or consumable, making it difficult to gather the relevant data and turn it into applicable knowledge. But when sensing, gathering, and storing data and beaming it to the supernova (cloud) and analyzing it through software applications becomes virtually free (relatively speaking) a crucial breakthrough has occurred: now any system can be optimized for peak performance - with much less effort."
+                                    </p>
+                                </div>
+                                <div class="grid_5 wow right fadeInLeft">
+                                    <br />
+                                    <br />
+                                    <p>- Thomas L. Friedman, parenthetical comments provided by Volley Boast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+                    <section class="well15">
+                        <div class="container">
+                            <h4 class="coltext1 center">Volley Boast Monitoring Service</h4>
+                            <br />
+                            <p class="marginTop20px">
+                                Volley Boast’s Monitoring Service ("VBMS") is a cost-effective way to collect and access data to improve both operations and the bottom line.
+                            </p>
+                            <p class="marginTop20px">
+                                VBMS delivers essential operations management data to the desktop:
+                            </p>
+                            <br />
+                            <ul class="ulList m-l-15">
+                                <li>Accessable from any browser.</li>
+                                <li>Without the need for utilities or extensive cabling.</li>
+                                <li>Connects to industry standard sensors.</li>
+                                <li>Ideal for operations located in remote areas.</li>
+                            </ul>
+                            <br />
+                            <p class="marginTop20px">
+                                VBMS provides operators with timely, actionable information:
+                            </p>
+                            <br />
+                            <ul class="ulList m-l-15">
+                                <li>Custom secure web portal for accessing defined charts/graphs and reports.</li>
+                                <li>Customer specified analysis/calculations performed.</li>
+                                <li>Integration of predictive maintenance algorithms.</li>
+                                <li>Alerts provided per customer defined settings.</li>
+                                <li>Data stored per industry "best practices" and customer needs.</li>
+                            </ul>
+                            <br />
+                            <p class="marginTop20px">
+                                The value proposition for VBMS is simple, transparent, and straightforward:
+                            </p>
+                            <br />
+                            <ul class="ulList m-l-15">
+                                <li>Volley Boast installs, owns, and maintains the telemetry equipment and is responsible for delivery of the specified information in the requested format.</li>
+                                <li>Customer installs, owns, and maintains the sensors connected to their operations (Volley Boast assists with this when necessary).</li>
+                                <li>Volley Boast charges a monthly fee for the data/information that is provided.</li>
+                                <li>Customer may continue or discontinue with the service after an initial period.</li>
+                                <li>Customer saves money, gets better information, and improves operations.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </main>
+            </form>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="wow fadeInUp">
+                        <p>
+                            &#169; Volley Boast LLC
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
