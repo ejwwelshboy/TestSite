@@ -1,0 +1,88 @@
+/*==================   Accordion    ======================*/
+.accordion {
+  border: 1px solid #d8d8d8; }
+  @media (max-width: 767px) {
+    .accordion {
+      padding: 10px 10px 0px 10px; } }
+
+.accordion_cnt {
+  position: relative;
+  top: -105px;
+  padding: 0 60px 10px 239px; }
+  @media (max-width: 767px) {
+    .accordion_cnt {
+      padding: 10px 0px 10px 10px;
+      top: 0; } }
+  .accordion_cnt h6 {
+    color: #5C910C; }
+  .accordion_cnt ul {
+    margin-top: 7px;
+    margin-bottom: 35px; }
+    @media (max-width: 979px) {
+      .accordion_cnt ul {
+        width: 90%; } }
+    .accordion_cnt ul:last-child {
+      margin-bottom: 0; }
+    .accordion_cnt ul li {
+      margin-top: 0;
+      line-height: 31px;
+      font-size: 16px; }
+      .accordion_cnt ul li:before {
+        top: 4px; }
+
+.ui-accordion-header {
+  outline: none;
+  padding: 9px 29px 41px 10px;
+  position: relative;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .ui-accordion-header {
+      padding: 0;
+      margin-bottom: 10px; } }
+  .ui-accordion-header .box {
+    margin-top: 28px; }
+    @media (max-width: 767px) {
+      .ui-accordion-header .box {
+        display: none; } }     
+       .ui-accordion-header-active .accordionBottom:after {
+    content: "\f137"; }
+  .ui-accordion-header-active .accordionBottom span:nth-child(1) {
+    display: none; }
+  .ui-accordion-header-active .accordionBottom span:nth-child(2) {
+    display: block; }
+
+.accordionBottom {
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  border-radius: 2px;
+  font: 15px/20px "Cardo", serif;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  background: #5C910C;
+  padding: 15px 33px 15px 57px;
+  right: 29px;
+  top: 39px; }
+  .accordionBottom:hover {
+    background: #222222; }
+  @media (max-width: 767px) {
+    .accordionBottom {
+      position: relative;
+      right: 0;
+      top: 0; } }
+  .accordionBottom:after {
+    position: absolute;
+    left: 30px;
+    top: 16px;
+    content: "\f13a";
+    color: #fff;
+    font: 400 15px/20px "FontAwesome"; }
+  .accordionBottom span:nth-child(1) {
+    display: block; }
+  .accordionBottom span:nth-child(2) {
+    display: none; }
+
+/*# sourceMappingURL=_accordion.css.map */

@@ -1,0 +1,347 @@
+/*========================================================
+                        Camera
+=========================================================*/
+/*.camera_container {
+    position: relative;
+    padding-bottom: 31%;
+}
+
+@media (max-width: 1338.70968px) {
+    .camera_container {
+        padding-bottom: 830px;
+    }
+}*/
+
+.camera_play {
+    background: #fff url(../images/play.png) no-repeat center;
+}
+.camera_stop {
+    background: #fff url(../images/pause.png) no-repeat center;
+}
+.camera_wrap {
+    display: none;
+    /*position: absolute;*/
+    position:relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 0 !important;
+    height: 100%;
+    background: #fff;
+    z-index: 0;
+}
+
+    .camera_wrap img {
+        max-width: none !important;
+    }
+
+.camera_fakehover {
+    height: 100%;
+    min-height: 60px;
+    position: relative;
+    width: 100%;
+}
+
+.camera_src {
+    display: none;
+}
+
+.cameraSlide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.cameraContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.camera_target {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: left;
+    z-index: 0;
+}
+
+.camera_overlayer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.camera_target_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 2;
+    text-align: center;
+}
+
+.camera_loader {
+    background: #fff url(../images/camera-loader.gif) no-repeat center;
+    border: 1px solid #ffffff;
+    border-radius: 18px;
+    height: 36px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    margin: -18px 0 0 -18px;
+    top: 50%;
+    width: 36px;
+    z-index: 3;
+}
+
+.camera_nav_cont {
+    height: 65px;
+    overflow: hidden;
+    position: absolute;
+    right: 9px;
+    top: 15px;
+    width: 120px;
+    z-index: 4;
+}
+
+.camerarelative {
+    overflow: hidden;
+    position: relative;
+}
+
+.imgFake {
+    cursor: pointer;
+}
+
+.camera_command_wrap .hideNav {
+    display: none;
+}
+
+.camera_command_wrap {
+    left: 0;
+    position: relative;
+    right: 0;
+    z-index: 4;
+}
+
+.showIt {
+    display: none;
+}
+
+.camera_clear {
+    clear: both;
+    display: block;
+    height: 1px;
+    margin: -1px 0 25px;
+    position: relative;
+}
+
+.camera_caption {
+    display: none;
+}
+
+.cameraContent .camera_caption {
+    display: block;
+}
+
+/*================   Custom Layout&Styles   =====================*/
+.cameraCont, .cameraContents {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 923px) {
+    .cameraCont, .cameraContents {
+        width: 100%;
+    }
+}
+
+.camera_caption1 {
+    background: rgba(0, 0, 0, 0.59);
+    bottom: 0;
+    padding: 95px 0 74px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+@media (max-width: 1079px) {
+    .camera_caption1 {
+        padding: 35px 0;
+    }
+}
+
+.camera_caption1 h4 {
+    margin-bottom: 37px;
+    color: #fff;
+}
+
+@media (max-width: 653px) {
+    .camera_caption1 h4 {
+        margin-bottom: 7px;
+    }
+}
+
+.camera_caption1 p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 570px;
+    color: #cecece;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1920px) {
+    .camera_caption1 p {
+        padding: 0 400px;
+    }
+}
+
+@media (max-width: 1652px) {
+    .camera_caption1 p {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 653px) {
+    .camera_caption1 p {
+        margin-bottom: 0px;
+        padding: 0 10px;
+    }
+}
+
+.camera_caption {
+    position: absolute;
+    bottom: 577px;
+    width: 100%;
+}
+
+    .camera_caption h3 {
+        color: #fff;
+        text-shadow: 2px 1px 1px #222222;
+    }
+
+@media (max-width: 1259px) {
+    .camera_caption h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.camera_caption p {
+    margin: 0;
+    width: 75%;
+    position: relative;
+    left: -3px;
+}
+
+.camera_caption > div {
+    text-align: center;
+}
+
+.camera_pag {
+    box-sizing: border-box;
+    display: block;
+    left: 45.4%;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    /*bottom: 491px;*/
+    bottom: 5%;
+    z-index: 10;
+}
+
+@media (max-width: 980px) {
+    .camera_pag {
+        left: 44.4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .camera_pag {
+        /*bottom: 503px;*/
+        left: 43.4%;
+    }
+}
+
+@media (max-width: 598px) {
+    .camera_pag {
+        left: 41.4%;
+        /*bottom: 535px;*/
+    }
+}
+
+@media (max-width: 360px) {
+    .camera_pag {
+        left: 33.4%;
+        /*bottom: 535px;*/
+    }
+}
+
+@media (max-width: 320px) {
+    .camera_pag {
+        /*bottom: 549px;*/
+        left: 31.4%;
+    }
+}
+
+.camera_pag_ul,.camera_pag_ul li:first-child {
+    margin: 0px;
+    padding: 0px;
+}
+
+    .camera_pag_ul li {
+        margin: 0 0 0 16px;
+        display: inline-block;
+        line-height: 8px;
+        text-align: center;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -moz-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease;
+    }
+    
+        .camera_pag_ul li.cameracurrent, .camera_pag_ul li:hover {
+            background: #333;
+        }
+
+        .camera_pag_ul li > span {
+            background: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+            display: block;
+            height: 14px;
+            overflow: hidden;
+            text-indent: -100px;
+            transition: all 0.25s ease 0s;
+            width: 14px;
+            border: 4px double #666;
+        }
+
+        .camera_pag_ul li.cameracurrent span, .camera_pag_ul li:hover span {
+            background: #de2715 none repeat scroll 0 0;
+            transition: all 0.25s ease 0s;
+            border: 4px double #292929;
+        }

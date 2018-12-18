@@ -1,0 +1,189 @@
+/*==================  RD Parallax    ======================*/
+.parallax {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+    .parallax .bg_parallax1 {
+        margin-top: 114px;
+        color: #fff;
+        z-index: 3;
+        float: right;
+        position: relative;
+    }
+
+        .parallax .bg_parallax1 h2 {
+            line-height: 60px;
+        }
+
+            .parallax .bg_parallax1 h2 span {
+                font-size: 36px;
+                display: block;
+            }
+
+@media (max-width: 1199px) {
+    .parallax .bg_parallax1 h2 span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 979px) {
+    .parallax .bg_parallax1 h2 span {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.parallax .bg_parallax1 p {
+    margin-top: 26px;
+}
+
+.parallax .bg_parallax1 a {
+    margin-top: 37px;
+    padding: 14px 26px 14px 20px;
+}
+
+.parallax:before {
+    background: rgba(25, 25, 25, 0.67);
+    content: "";
+    width: 49.3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .parallax:before {
+        width: 100%;
+    }
+}
+
+.parallax_image, .parallax_pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-position: center center;
+    will-change: transform;
+}
+
+.parallax_image {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.parallax_pattern {
+    background-repeat: repeat;
+}
+
+.parallax_cnt {
+    position: relative;
+    z-index: 4;
+}
+
+.parallax1 .bg_parallax2 {
+    text-align: center;
+    color: #fff;
+    color: #fff;
+    z-index: 23;
+}
+
+    .parallax1 .bg_parallax2 h2 {
+        font-size: 36px;
+        line-height: 47px;
+        margin-bottom: 33px;
+    }
+
+@media (max-width: 767px) {
+    .parallax1 .bg_parallax2 h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.parallax1 .bg_parallax2 p {
+    font-size: 18px;
+}
+
+    .parallax1 .bg_parallax2 p strong {
+        color: #5C910C;
+    }
+
+.parallax1:after {
+    background: rgba(25, 25, 25, 0.67);
+    content: "";
+    width: 100%;
+    height: 69.7%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .parallax1:after {
+        width: 100%;
+    }
+}
+
+.parallax1:before {
+    display: none;
+}
+
+
+.parallax2 .bg_parallax2 {
+    text-align: center;
+    color: #fff;
+    color: #fff;
+    z-index: 23;
+}
+
+    .parallax2 .bg_parallax2 h2 {
+        font-size: 36px;
+        line-height: 47px;
+        margin-bottom: 33px;
+    }
+
+@media (max-width: 767px) {
+    .parallax2 .bg_parallax2 h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.parallax2 .bg_parallax2 p {
+    font-size: 18px;
+}
+
+    .parallax2 .bg_parallax2 p strong {
+        color: #5C910C;
+    }
+
+.parallax2:after {
+    background: rgba(25, 25, 25, 0.67);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .parallax2:after {
+        width: 100%;
+    }
+}
+
+.parallax2:before {
+    display: none;
+}
+
+
+/*# sourceMappingURL=_parallax.css.map */
